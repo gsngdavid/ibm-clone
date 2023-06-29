@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        @apply max-w-7xl mx-auto px-4
+    }
+    .nav-link {
+        @apply flex items-center gap-2 py-[13px] px-[16px] text-primary hover:bg-gray-light
+    }
+    .link {
+        @apply text-blue hover:text-blue-dark hover:underline
+    }
+    .divider {
+        @apply w-full h-[1px]
+    }
+    .moving-paragraph {
+        @apply absolute text-primary text-xl transform transition-all delay-100 duration-500
+    }
+}
+
+
+@font-face {
+    font-display: auto;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 300;
+    src: local("IBM Plex Sans Light"),local("IBMPlexSans-Light"),url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2) format("woff2");
+    unicode-range: U+0000,U+000d,U+0020-007e,U+00a0-00a3,U+00a4-00ff,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2013-2014,U+2018-201a,U+201c-201e,U+2020-2022,U+2026,U+2030,U+2039-203a,U+2044,U+2074,U+20ac,U+2122,U+2212,U+fb01-fb02
+}
+
+@font-face {
+    font-display: auto;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: local("IBM Plex Sans"),local("IBMPlexSans"),url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/complete/woff2/IBMPlexSans-Regular.woff2) format("woff2"),url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-display: auto;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    src: local("IBM Plex Sans SmBld"),local("IBMPlexSans-SmBld"),url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2) format("woff2");
+    unicode-range: U+0000,U+000d,U+0020-007e,U+00a0-00a3,U+00a4-00ff,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2013-2014,U+2018-201a,U+201c-201e,U+2020-2022,U+2026,U+2030,U+2039-203a,U+2044,U+2074,U+20ac,U+2122,U+2212,U+fb01-fb02
+}
+
+@font-face {
+    font-display: auto;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: local("IBM Plex Sans"),local("IBMPlexSans"),url(https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2) format("woff2");
+    unicode-range: U+0000,U+000d,U+0020-007e,U+00a0-00a3,U+00a4-00ff,U+0131,U+0152-0153,U+02c6,U+02da,U+02dc,U+2013-2014,U+2018-201a,U+201c-201e,U+2020-2022,U+2026,U+2030,U+2039-203a,U+2044,U+2074,U+20ac,U+2122,U+2212,U+fb01-fb02
+}
